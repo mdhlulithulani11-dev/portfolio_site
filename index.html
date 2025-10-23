@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thulani Mdhluli | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Thulani<span>Mdhluli</span></h1>
+      <ul class="nav-links">
+        <li><a onclick="showSection('home')">Home</a></li>
+        <li><a onclick="showSection('about')">About</a></li>
+        <li><a onclick="showSection('skills')">Skills</a></li>
+        <li><a onclick="showSection('projects')">Projects</a></li>
+        <li><a onclick="showSection('contact')">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="section active">
+    <div class="content-box">
+      <h2>Welcome!</h2>
+      <p>Hi, I’m <strong>Thulani Mdhluli</strong>, an aspiring web developer and creative thinker. I love crafting digital experiences that are clean, modern, and easy to use. Scroll through to learn more about me and my journey in tech.</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="content-box">
+      <img src="images/profile.jpeg" alt="Thulani" class="profile-img">
+      <h2>About Me</h2>
+      <p>I’m a detail-oriented learner who enjoys designing visually appealing websites. I believe that great design meets functionality, and I strive to merge both in every project I work on.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="content-box">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML & CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">UI/UX Design</div>
+        <div class="skill-card">Communication</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="content-box">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="images/responsive.jpg" alt="Project 1">
+          <h3>Responsive Web Design</h3>
+          <p>A mobile-friendly, responsive layout built with HTML5 and CSS3 to enhance user experience across devices.</p>
+        </div>
+        <div class="project-card">
+          <img src="images/portfolio.jpg" alt="Project 2">
+          <h3>Creative Portfolio Concept</h3>
+          <p>Designed a visually engaging portfolio with modern color schemes and smooth animations for better presentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="content-box">
+      <h2>Contact Me</h2>
+      <p>Let's collaborate! Reach out to me via email or phone.</p>
+      <p>Email: <a href="mailto:mdhlulithulani@gmail.com">mdhlulithulani@gmail.com</a></p>
+      <p>Phone: +27 60 812 8543</p>
+      <button class="contact-btn" onclick="alert('Thank you for reaching out! I will get back to you soon.')">Send a Message</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Thulani Mdhluli | Designed with passion</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
