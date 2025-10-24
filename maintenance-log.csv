@@ -1,0 +1,2 @@
+Date,Who,Changes,PerfBefore,PerfAfter,SecurityNotes,IssuesFixed,NextCheck
+2025-10-24,Buhle,"Compressed hero images; added lazy loading","Lighthouse Perf 48; LCP 3.2s","Lighthouse Perf 76; LCP 1.7s","HTTPS ok; SecurityHeaders grade B (added X-Frame-Options)","Fixed footer broken link","2025-10-31"
