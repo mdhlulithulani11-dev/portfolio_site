@@ -1,4 +1,4 @@
-/* Reset & Fonts */
+/* ====== Global Styles ====== */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -7,13 +7,12 @@ body {
   transition: background 0.5s, color 0.5s;
 }
 
-/* Dark mode */
 body.dark-mode {
   background-color: #2b2b2b;
   color: #fdf6f0;
 }
 
-/* Navigation */
+/* ====== Navbar ====== */
 .navbar {
   background-color: #3e1f47;
   color: #fff;
@@ -21,7 +20,7 @@ body.dark-mode {
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.2);
 }
 
 .nav-container {
@@ -75,7 +74,7 @@ body.dark-mode {
   color: #fff;
 }
 
-/* Sections */
+/* ====== Sections ====== */
 .section {
   display: none;
   min-height: 90vh;
@@ -88,13 +87,14 @@ body.dark-mode {
   display: block;
 }
 
+/* ====== Content Box ====== */
 .content-box {
-  background: #ffffff;
+  background: #fff;
   max-width: 800px;
   margin: auto;
   padding: 40px 30px;
   border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
   transition: background 0.5s, color 0.5s;
 }
 
@@ -103,6 +103,7 @@ body.dark-mode .content-box {
   color: #fdf6f0;
 }
 
+/* ====== Typography ====== */
 h2 {
   color: #3e1f47;
   margin-bottom: 20px;
@@ -117,7 +118,7 @@ p {
   line-height: 1.7;
 }
 
-/* About Section */
+/* ====== Profile Image ====== */
 .profile-img {
   width: 150px;
   height: 150px;
@@ -127,7 +128,7 @@ p {
   margin-bottom: 15px;
 }
 
-/* Skills Section */
+/* ====== Skills ====== */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -149,7 +150,7 @@ p {
   color: #3e1f47;
 }
 
-/* Projects Section */
+/* ====== Projects ====== */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -160,7 +161,7 @@ p {
 .project-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
   overflow: hidden;
   max-width: 350px;
   text-align: left;
@@ -186,7 +187,7 @@ p {
   margin: 0 15px 20px 15px;
 }
 
-/* Contact Button */
+/* ====== Buttons ====== */
 .contact-btn {
   padding: 12px 25px;
   border: none;
@@ -204,7 +205,7 @@ p {
   color: #3e1f47;
 }
 
-/* Footer */
+/* ====== Footer ====== */
 footer {
   background-color: #3e1f47;
   color: #fff;
@@ -214,13 +215,19 @@ footer {
   margin-top: 40px;
 }
 
-/* Animations */
+/* ====== Animations ====== */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Responsive */
+/* ====== Responsive Design ====== */
 @media (max-width: 768px) {
   .nav-container {
     flex-direction: column;
@@ -240,7 +247,4 @@ footer {
     align-items: center;
   }
 }
-
-
-
 
